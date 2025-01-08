@@ -6,7 +6,24 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "ENV_VAR_NAME": "value"
+            },
+            "args": [],
+            "justMyCode": true
+        },
+        {
+            "name": "Run Pytest",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "-v"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
