@@ -8,5 +8,10 @@
     "files.exclude": {
         "**/__pycache__": true,
         "**/*.pyc": true
-    }
+    },
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports"
+    ],
+    "python.analysis.typeCheckingMode": "off",
 }
